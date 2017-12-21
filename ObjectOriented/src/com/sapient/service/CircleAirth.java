@@ -2,9 +2,15 @@ package com.sapient.service;
 
 public class CircleAirth {
 
-	public float radius;
+	public double radius;
 	
 	
+	public CircleAirth() {
+		super();
+		
+		this.radius = radius;
+	}
+
 	public double calcArea(){
 		double area = Math.PI * radius * radius ;
 		return area;
