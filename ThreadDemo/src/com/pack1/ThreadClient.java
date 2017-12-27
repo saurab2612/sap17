@@ -11,6 +11,9 @@ public class ThreadClient {
 		
 		t1.start();
 		t2.start();
+		
+	//	t1.start();
+	//	t2.start();
 
 	}
 
