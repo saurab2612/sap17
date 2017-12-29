@@ -1,12 +1,9 @@
 package com.sapient.service;
 
 public class Palindrome {
-	
-	
-//	Palindrome() {
-//		
-//	}
-//	
+	 Palindrome(){
+		 
+	 }
 	
 	public boolean checkPalindrome(String str){
 		if(str == null)
