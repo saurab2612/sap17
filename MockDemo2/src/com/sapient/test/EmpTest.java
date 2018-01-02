@@ -28,6 +28,7 @@ import name.falgout.jeffrey.testing.junit5.MockitoExtension;
 public class EmpTest {
 	
 	@Mock
+	static
 	IDao dao;
 	
 	@InjectMocks
@@ -44,7 +45,7 @@ public class EmpTest {
 	static Emp e4 = new Emp(1002,"shubham",7000);
 	
 	@BeforeAll
-	public void beforeAll(){
+	public static void beforeAll(){
 	
 		
 		idlist = new ArrayList<>();
@@ -68,7 +69,7 @@ public class EmpTest {
 	}
 	
 	@BeforeEach
-	public void beofre(){
+	public void before(){
 		List<Emp> lst = new ArrayList<>();
 		lst.add(e1);
 		lst.add(e2);
@@ -81,7 +82,7 @@ public class EmpTest {
 	public void testEmp1(){
 		List<Emp> actual = ser.viewEmployee("id");
 		assertEquals(idlist, actual);
-		
+		verify(dao).getEmployee();
 	}
 	
 	@Test
