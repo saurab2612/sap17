@@ -1,59 +1,29 @@
-2018-01-02 16:41:27 - main thred starts
-2018-01-02 16:41:27 - service constructor invoked
-2018-01-02 16:41:27 - static block called in dao
-2018-01-02 16:41:27 - hashmap initialised using three account instances
-2018-01-02 16:41:27 - setter setDao() called
-2018-01-02 16:41:27 - injecting dao
-2018-01-02 16:41:27 - dao initialized
-2018-01-02 16:41:27 - service instance is ready with dao dependency
-2018-01-02 16:41:27 - service instance created
-2018-01-02 16:41:27 - transfer the amount rs 5000 from account ID 1001 to 1002
-2018-01-02 16:41:27 - transferfund() invoked in service
-2018-01-02 16:41:27 - gwt account method invoked
-2018-01-02 16:41:27 - checking the aid against the map key
-2018-01-02 16:41:27 - account ID 1001 found
-2018-01-02 16:41:27 - from account retrieved
-2018-01-02 16:41:27 - gwt account method invoked
-2018-01-02 16:41:27 - checking the aid against the map key
-2018-01-02 16:41:27 - account ID 1002 found
-2018-01-02 16:41:27 - to account retrieved
-2018-01-02 16:41:27 - 1001 and 1002 accounts are updates successfully
-2018-01-02 16:41:27 - successfully transfered
-2018-01-02 16:41:27 - transfer the amount rs 5000 from account ID 1003 to 1002
-2018-01-02 16:41:27 - transferfund() invoked in service
-2018-01-02 16:41:27 - gwt account method invoked
-2018-01-02 16:41:27 - checking the aid against the map key
-2018-01-02 16:41:27 - account ID 1003 found
-2018-01-02 16:41:27 - from account retrieved
-2018-01-02 16:41:27 - gwt account method invoked
-2018-01-02 16:41:27 - checking the aid against the map key
-2018-01-02 16:41:27 - account ID 1002 found
-2018-01-02 16:41:27 - to account retrieved
-2018-01-02 16:41:27 - no sufficient fund to transfer 
+2018-01-03 10:19:09 TRACE - gwt account method invoked
+2018-01-03 10:19:09 DEBUG - checking the aid against the map key
+2018-01-03 10:19:09 INFO - account ID 1002 found
+2018-01-03 10:19:09 DEBUG - to account retrieved
+2018-01-03 10:19:09 INFO - 1001 and 1002 accounts are updates successfully
+2018-01-03 10:19:09 INFO - successfully transfered
+2018-01-03 10:19:09 INFO - transfer the amount rs 5000 from account ID 1003 to 1002
+2018-01-03 10:19:09 TRACE - transferfund() invoked in service
+2018-01-03 10:19:09 TRACE - gwt account method invoked
+2018-01-03 10:19:09 DEBUG - checking the aid against the map key
+2018-01-03 10:19:09 INFO - account ID 1003 found
+2018-01-03 10:19:09 DEBUG - from account retrieved
+2018-01-03 10:19:09 TRACE - gwt account method invoked
+2018-01-03 10:19:09 DEBUG - checking the aid against the map key
+2018-01-03 10:19:09 INFO - account ID 1002 found
+2018-01-03 10:19:09 DEBUG - to account retrieved
+2018-01-03 10:19:09 ERROR - no sufficient fund to transfer 
 com.sapient.exceptions.BalException: no sufficient fund to transfer 
 	at com.sapient.service.SerImpl.transferFund(SerImpl.java:41)
 	at com.sapient.client.TransferClient.main(TransferClient.java:31)
-2018-01-02 16:41:27 - transfer the amount rs 5000 from account ID 2003 to 1002
-2018-01-02 16:41:27 - transferfund() invoked in service
-2018-01-02 16:41:27 - gwt account method invoked
-2018-01-02 16:41:27 - checking the aid against the map key
-2018-01-02 16:41:27 - no id found
+2018-01-03 10:19:09 INFO - transfer the amount rs 5000 from account ID 2003 to 1002
+2018-01-03 10:19:09 TRACE - transferfund() invoked in service
+2018-01-03 10:19:09 TRACE - gwt account method invoked
+2018-01-03 10:19:09 DEBUG - checking the aid against the map key
+2018-01-03 10:19:09 ERROR - no id found
 com.sapient.exceptions.IdException: no id found
 	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:31)
 	at com.sapient.service.SerImpl.transferFund(SerImpl.java:35)
 	at com.sapient.client.TransferClient.main(TransferClient.java:39)
-2018-01-02 16:41:38 - main thred starts
-2018-01-02 16:41:38 - service constructor invoked
-2018-01-02 16:41:38 - static block called in dao
-2018-01-02 16:41:38 - hashmap initialised using three account instances
-2018-01-02 16:41:38 - setter setDao() called
-2018-01-02 16:41:38 - injecting dao
-2018-01-02 16:41:38 - dao initialized
-2018-01-02 16:41:38 - service instance is ready with dao dependency
-2018-01-02 16:41:38 - service instance created
-2018-01-02 16:41:38 - transfer the amount rs 5000 from account ID 1001 to 1002
-2018-01-02 16:41:38 - transferfund() invoked in service
-2018-01-02 16:41:38 - gwt account method invoked
-2018-01-02 16:41:38 - checking the aid against the map key
-2018-01-02 16:41:38 - account ID 1001 found
-2018-01-02 16:41:38 - from account retrieved
