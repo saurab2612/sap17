@@ -1,0 +1,20 @@
+2018-01-04 09:54:02 DEBUG - checking the aid against the map key
+2018-01-04 09:54:02 ERROR - no id found
+com.sapient.exceptions.IdException: no id found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:31)
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:35)
+	at com.sapient.client.TransferClient.main(TransferClient.java:45)
+2018-01-04 09:54:03 TRACE - main thred starts
+2018-01-04 09:54:03 TRACE - service constructor invoked
+2018-01-04 09:54:03 TRACE - setter setDao() called
+2018-01-04 09:54:03 DEBUG - injecting dao
+2018-01-04 09:54:03 INFO - dao initialized
+2018-01-04 09:54:03 INFO - service instance is ready with dao dependency
+2018-01-04 09:54:03 DEBUG - service instance created
+2018-01-04 09:54:03 INFO - transfer the amount rs 5000 from account ID 1001 to 1002
+2018-01-04 09:54:03 TRACE - transferfund() invoked in service
+2018-01-04 09:54:03 TRACE - gwt account method invoked
+2018-01-04 09:54:03 DEBUG - checking the aid against the map key
+2018-01-04 09:54:03 INFO - account ID 1001 found
+2018-01-04 09:54:03 DEBUG - from account retrieved
+2018-01-04 09:54:03 TRACE - gwt account method invoked

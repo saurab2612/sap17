@@ -1,0 +1,5 @@
+2018-01-04 09:53:41 ERROR - no id found
+com.sapient.exceptions.IdException: no id found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:31)
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:35)
+	at com.sapient.client.TransferClient.main(TransferClient.java:45)

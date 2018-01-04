@@ -1,0 +1,22 @@
+2018-01-04 09:54:03 DEBUG - checking the aid against the map key
+2018-01-04 09:54:03 INFO - account ID 1002 found
+2018-01-04 09:54:03 DEBUG - to account retrieved
+2018-01-04 09:54:03 ERROR - no sufficient fund to transfer 
+com.sapient.exceptions.BalException: no sufficient fund to transfer 
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:41)
+	at com.sapient.client.TransferClient.main(TransferClient.java:29)
+2018-01-04 09:54:03 INFO - transfer the amount rs 5000 from account ID 1003 to 1002
+2018-01-04 09:54:03 TRACE - transferfund() invoked in service
+2018-01-04 09:54:03 TRACE - gwt account method invoked
+2018-01-04 09:54:03 DEBUG - checking the aid against the map key
+2018-01-04 09:54:03 INFO - account ID 1003 found
+2018-01-04 09:54:03 DEBUG - from account retrieved
+2018-01-04 09:54:03 TRACE - gwt account method invoked
+2018-01-04 09:54:03 DEBUG - checking the aid against the map key
+2018-01-04 09:54:03 INFO - account ID 1002 found
+2018-01-04 09:54:03 DEBUG - to account retrieved
+2018-01-04 09:54:03 ERROR - no sufficient fund to transfer 
+com.sapient.exceptions.BalException: no sufficient fund to transfer 
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:41)
+	at com.sapient.client.TransferClient.main(TransferClient.java:37)
+2018-01-04 09:54:03 INFO - transfer the amount rs 5000 from account ID 2003 to 1002

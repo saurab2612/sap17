@@ -1,0 +1,44 @@
+2018-01-04 09:53:30 TRACE - main thred starts
+2018-01-04 09:53:30 TRACE - service constructor invoked
+2018-01-04 09:53:30 TRACE - setter setDao() called
+2018-01-04 09:53:30 DEBUG - injecting dao
+2018-01-04 09:53:30 INFO - dao initialized
+2018-01-04 09:53:30 INFO - service instance is ready with dao dependency
+2018-01-04 09:53:30 DEBUG - service instance created
+2018-01-04 09:53:30 INFO - transfer the amount rs 5000 from account ID 1001 to 1002
+2018-01-04 09:53:30 TRACE - transferfund() invoked in service
+2018-01-04 09:53:30 TRACE - gwt account method invoked
+2018-01-04 09:53:30 DEBUG - checking the aid against the map key
+2018-01-04 09:53:30 INFO - account ID 1001 found
+2018-01-04 09:53:30 DEBUG - from account retrieved
+2018-01-04 09:53:30 TRACE - gwt account method invoked
+2018-01-04 09:53:30 DEBUG - checking the aid against the map key
+2018-01-04 09:53:30 INFO - account ID 1002 found
+2018-01-04 09:53:30 DEBUG - to account retrieved
+2018-01-04 09:53:30 ERROR - no sufficient fund to transfer 
+com.sapient.exceptions.BalException: no sufficient fund to transfer 
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:41)
+	at com.sapient.client.TransferClient.main(TransferClient.java:29)
+2018-01-04 09:53:30 INFO - transfer the amount rs 5000 from account ID 1003 to 1002
+2018-01-04 09:53:30 TRACE - transferfund() invoked in service
+2018-01-04 09:53:30 TRACE - gwt account method invoked
+2018-01-04 09:53:30 DEBUG - checking the aid against the map key
+2018-01-04 09:53:30 INFO - account ID 1003 found
+2018-01-04 09:53:30 DEBUG - from account retrieved
+2018-01-04 09:53:30 TRACE - gwt account method invoked
+2018-01-04 09:53:30 DEBUG - checking the aid against the map key
+2018-01-04 09:53:30 INFO - account ID 1002 found
+2018-01-04 09:53:30 DEBUG - to account retrieved
+2018-01-04 09:53:30 ERROR - no sufficient fund to transfer 
+com.sapient.exceptions.BalException: no sufficient fund to transfer 
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:41)
+	at com.sapient.client.TransferClient.main(TransferClient.java:37)
+2018-01-04 09:53:30 INFO - transfer the amount rs 5000 from account ID 2003 to 1002
+2018-01-04 09:53:30 TRACE - transferfund() invoked in service
+2018-01-04 09:53:30 TRACE - gwt account method invoked
+2018-01-04 09:53:30 DEBUG - checking the aid against the map key
+2018-01-04 09:53:30 ERROR - no id found
+com.sapient.exceptions.IdException: no id found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:31)
+	at com.sapient.service.SerImpl.transferFund(SerImpl.java:35)
+	at com.sapient.client.TransferClient.main(TransferClient.java:45)
