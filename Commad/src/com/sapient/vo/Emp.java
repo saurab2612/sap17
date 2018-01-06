@@ -7,6 +7,7 @@ public class Emp {
 	private double sal;
 	
 	
+	
 	public int getEid() {
 		return eid;
 	}
@@ -25,6 +26,13 @@ public class Emp {
 	public void setSal(double sal) {
 		this.sal = sal;
 	}
+	public double getPf() {
+		return sal * 0.12;
+	}
+	public double getNetpay() {
+		return sal-getPf();
+	}
+	
 	
 	
 	

@@ -16,12 +16,9 @@ public class EmpService {
 	 */
 	public boolean addToFile(Emp emp){
 		 boolean res = false;
-		 double netsal = 0;
-		 double pf = 0;
 		try(PrintWriter pw = new PrintWriter(new FileWriter("sap.txt",true))){ // printwriter also internally uses buffer
-			pf = emp.getSal()*0.12;
-			netsal = emp.getSal() - pf;
-			pw.write(emp.getEid() + "," + emp.getEname() +","+ emp.getSal());
+		
+			pw.write(emp.getEid() + "," + emp.getEname() +","+ emp.getSal() + "," + emp.getPf() + "," + emp.getNetpay());
 			res =true;
 		}catch(Exception e){
 			System.out.println(e.getMessage());
