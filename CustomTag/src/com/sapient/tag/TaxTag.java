@@ -1,0 +1,38 @@
+package com.sapient.tag;
+
+import java.io.IOException;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class TaxTag extends SimpleTagSupport {
+	
+	private double income;
+	private String var;
+	
+	public void setIncome(double income) {
+		this.income = income;
+	}
+	public void setVar(String var) {
+		this.var = var;
+	}
+	
+	@Override
+	public void doTag() throws JspException, IOException {
+		double tax=0;
+		if(income > 1000000){
+			tax=7500000*0.1 +(income - 1000000)*0.15;
+			
+		}else if(income > 2500000)
+			tax=(income-2500000)*0.1;
+		getJspContext().setAttribute(var,tax);
+		getJspBody().invoke(null);
+			
+			
+	}
+	
+	
+	
+	
+
+}
